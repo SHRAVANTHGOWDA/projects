@@ -1,0 +1,219 @@
+/* google forms */
+@import url('https://fonts.googleapis.com/css2?family=poopins');
+
+/*  global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.active {
+    padding: 8px 15px;
+    color: whitesmoke;
+    border-radius: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px black;   
+    
+
+}
+
+body ,html {
+    overflow-x: hidden;
+}
+/*nav bar*/
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+    
+
+}
+
+header {
+    width: 100vw;
+    height: 100vw;
+    background-image: url(./images/Sringeri-Temple.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+/*events*/
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.events .row {
+    margin-top: 50px;
+
+}
+h4 {
+    font-size: 3vmin;
+    color:whitesmoke ;
+    margin: 20px auto;
+}
+p {
+    color: #7c7c7c;
+    padding: 0px 40px;
+
+}
+.row .col img {
+    width: 80%;
+}
+
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+/*mobile */
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar {
+        padding: 0px 40px;
+    }
+    .events .ctn {
+        margin-top: 30px;
+    }
+    .logo {
+        position:absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -980px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+    /*events*/
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img {
+        max-width: 90%;
+    }
+    .footer{
+        padding: 10px;
+    }
+
+    /*animation*/
+    img {
+        transition: transform .3s ease;
+        
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+    .ctn:hover {
+        background: whitesmoke;
+        color: #fc036b;   
+        box-shadow: 2px 2px 5px black;    
+    }
+}
